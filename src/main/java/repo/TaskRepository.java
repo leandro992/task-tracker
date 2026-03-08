@@ -1,7 +1,7 @@
 package repo;
 
 
-import domain.Task;
+import com.victor.tasktracker.model.Task;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -10,7 +10,7 @@ import java.nio.file.StandardCopyOption;
 import java.nio.file.StandardOpenOption;
 import java.util.List;
 
-import static java.util.stream.Collectors.*;
+import static java.util.stream.Collectors.joining;
 
 
 public class TaskRepository {
