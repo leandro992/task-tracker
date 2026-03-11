@@ -16,10 +16,6 @@ public enum TaskStatus {
     }
 
     public static TaskStatus fromValue(String value) {
-        if (value == null || value.isBlank()) {
-            throw new IllegalArgumentException("Status cannot be null or blank.");
-        }
-
         for (TaskStatus status : TaskStatus.values()) {
             if (status.value.equalsIgnoreCase(value.trim())) {
                 return status;
